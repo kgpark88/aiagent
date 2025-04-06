@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/danny/Desktop",
+        "/Users/danny/aiagent"
+      ]
+    },
+    "google-maps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "YOUR_GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "tavily-mcp": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@0.1.2"],
+      "env": {
+        "TAVILY_API_KEY": "YOUR_TAVILY_API_KEY"  
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "mcp-youtube": {
+      "command": "npx",
+      "args": [
+        "@anaisbetts/mcp-youtube"
+      ]
+    }     
+  }
+}
